@@ -11,7 +11,6 @@ module.exports = {
 		const pokemonData = await c2j({
 			noheader:true
 		}).fromFile('./data.csv');
-		//console.log(pokemonData);
 		var fuse = require('fuse.js');	
 		const searcher = new fuse(pokemonData, {
 			useExtendedSearch: true,
