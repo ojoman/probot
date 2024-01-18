@@ -14,7 +14,6 @@ module.exports = {
 		const pokemonData = await c2j({
 			noheader:true
 		}).fromFile('./data.csv');
-		//console.log(pokemonData);
 		var fuse = require('fuse.js');	
 		const searcher = new fuse(pokemonData, {
 			useExtendedSearch: true,
@@ -40,7 +39,6 @@ module.exports = {
 		} catch (error) {
 			return await interaction.reply(`No Move found for ${pokemon}`);
 		}
-		console.log(moveInfo)
 		const movepool = pokemonInfo.field15.split('#');
 		const found = movepool.includes(moveInfo.field1);
 
