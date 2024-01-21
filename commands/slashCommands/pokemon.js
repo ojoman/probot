@@ -31,6 +31,7 @@ module.exports = {
 				{ name: 'Weight', value: pokemonInfo.field17, inline: true},
 			)
 			.addFields(
+				{ name: ' ', value: " ", inline: false},
 				{ name: 'HP', value: pokemonInfo.field9, inline: true },
 				{ name: 'Atk', value: pokemonInfo.field10, inline: true },
 				{ name: 'Def', value: pokemonInfo.field11, inline: true },
@@ -39,10 +40,12 @@ module.exports = {
 				{ name: 'Spe', value: pokemonInfo.field14, inline: true },
 			)
 			.addFields(
+				{ name: ' ', value: " ", inline: false},
 				{ name: 'Type1', value: pokemonInfo.field4, inline: true},
 				{ name: 'Type2', value: pokemonInfo.field5, inline: true},
 			)
 			.addFields(
+				{ name: ' ', value: " ", inline: false},
 				{ name: 'Ability 1', value: pokemonInfo.field6, inline: true},
 				{ name: 'Ability 2', value: pokemonInfo.field7, inline: true},
 				{ name: 'Hidden Ability', value: pokemonInfo.field8, inline: true},
